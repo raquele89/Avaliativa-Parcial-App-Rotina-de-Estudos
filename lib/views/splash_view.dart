@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+
 import 'home_view.dart';
 
 class SplashView extends StatelessWidget {
@@ -17,13 +17,6 @@ class SplashView extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-
-              const Icon(
-                Icons.menu_book,
-                size: 100,
-                color: Colors.blue,
-              ),
-
               const SizedBox(height: 25),
 
               const Text(
@@ -39,7 +32,7 @@ class SplashView extends StatelessWidget {
               const SizedBox(height: 15),
 
               const Text(
-                'Organize suas tarefas,\nconquiste seus objetivos!',
+                'Organize suas tarefas',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 17),
               ),
@@ -52,9 +45,7 @@ class SplashView extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => const HomeView(),
-                      ),
+                      MaterialPageRoute(builder: (context) => const HomeView()),
                     );
                   },
                   child: const Text('Começar'),
@@ -67,4 +58,3 @@ class SplashView extends StatelessWidget {
     );
   }
 }
-
