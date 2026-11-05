@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+
 import 'adicionar_tarefa_view.dart';
 import 'lista_tarefas_view.dart';
 import 'concluidas_view.dart';
@@ -23,21 +23,11 @@ class HomeView extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-
-            const Icon(
-              Icons.menu_book,
-              size: 70,
-              color: Colors.blue,
-            ),
-
             const SizedBox(height: 20),
 
             const Text(
               'Olá, estudante!',
-              style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 10),
@@ -59,8 +49,7 @@ class HomeView extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>
-                          const AdicionarTarefaView(),
+                      builder: (context) => const AdicionarTarefaView(),
                     ),
                   );
                 },
@@ -78,8 +67,7 @@ class HomeView extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>
-                          const ListaTarefasView(),
+                      builder: (context) => const ListaTarefasView(),
                     ),
                   );
                 },
@@ -97,8 +85,7 @@ class HomeView extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>
-                          const ConcluidasView(),
+                      builder: (context) => const ConcluidasView(),
                     ),
                   );
                 },
@@ -110,4 +97,3 @@ class HomeView extends StatelessWidget {
     );
   }
 }
-
